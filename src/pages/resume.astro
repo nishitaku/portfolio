@@ -3,8 +3,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Experience" sideBarActiveItemID="experience">
-  <div class="mb-4">
+<BaseLayout title="Resume" sideBarActiveItemID="resume">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Bio</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement title="Born in Nara, Japan" subtitle="1986" />
+    <TimeLineElement
+      title="神戸大学工学部情報知能工学科"
+      subtitle="2005 to 2008"
+    />
+    <TimeLineElement
+      title="神戸大学大学院システム情報学研究科"
+      subtitle="2009 to 2010"
+    />
+    <TimeLineElement
+      title="Worked at Hitachi (日立製作所)"
+      subtitle="2011 to 2016"
+    />
+    <TimeLineElement
+      title="Working as a freelancer and move to Nagoya"
+      subtitle="2016"
+    />
+    <TimeLineElement title="Move to Gifu" subtitle="2020" />
+  </div>
+
+  <div class="mb-5">
     <div class="text-3xl w-full font-bold">Experience</div>
   </div>
 
@@ -50,17 +75,6 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
     <TimeLineElement
       class="mb-4"
-      title="フルスタックエンジニア at カラオケ予約LINEアプリ"
-      subtitle="2020年1月 〜 2021年3月"
-    >
-      <span class="badge badge-neutral">Vue.js</span>
-      <span class="badge badge-neutral">Vuetify</span>
-      <span class="badge badge-neutral">LIFF</span>
-      <span class="badge badge-neutral">Firebase</span>
-    </TimeLineElement>
-
-    <TimeLineElement
-      class="mb-4"
       title="フルスタックエンジニア at IoTファイル管理システム"
       subtitle="2020年2月 〜 2020年3月"
     >
@@ -68,25 +82,6 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       <span class="badge badge-neutral">PrimeNG</span>
       <span class="badge badge-neutral">Nest.js</span>
       <span class="badge badge-neutral">DynamoDB</span>
-    </TimeLineElement>
-
-    <TimeLineElement
-      class="mb-4"
-      title="フルスタックエンジニア at カードゲームシステム"
-      subtitle="2020年1月 〜 2020年2月"
-    >
-      <span class="badge badge-neutral">React</span>
-      <span class="badge badge-neutral">Material UI</span>
-      <span class="badge badge-neutral">Firebase</span>
-    </TimeLineElement>
-
-    <TimeLineElement
-      class="mb-4"
-      title="フロントエンドエンジニア at カラオケ電源制御アプリ"
-      subtitle="2019年12月 〜 2020年1月"
-    >
-      <span class="badge badge-neutral">Vue.js</span>
-      <span class="badge badge-neutral">Buetify</span>
     </TimeLineElement>
 
     <TimeLineElement
@@ -110,4 +105,15 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       <span class="badge badge-neutral">MongoDB</span>
     </TimeLineElement>
   </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>ネットワークスペシャリスト (2015年10月)</li>
+    <li>データベーススペシャリスト (2014年4月)</li>
+    <li>セキュリティスペシャリスト (2012年10月)</li>
+    <li>応用情報技術者 (2011年4月)</li>
+  </ul>
 </BaseLayout>
