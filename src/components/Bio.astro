@@ -1,0 +1,21 @@
+---
+const { title, subtitle } = Astro.props;
+---
+
+<div class="flex">
+  <div class="bio__time">
+    <span class="w-4 h-4 bg-primary block rounded-full mt-1"></span>
+    <span class="bio___line bg-primary block h-full w-[2px] translate-x-[7px]"
+    ></span>
+  </div>
+  <div class="bio__data bd-grid px-5">
+    <h3 class="font-semibold">{title}</h3>
+    <span class="font-light text-sm text-accent">{subtitle}</span>
+  </div>
+</div>
+
+<style>
+  div:last-child .bio__time > .bio___line {
+    display: none;
+  }
+</style>
