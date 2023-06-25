@@ -1,25 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
-import BioElement from "../components/Bio.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="resume">
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Bio</div>
-  </div>
-
-  <div class="time-line-container grid gap-2 mb-10">
-    <BioElement title="Born in 奈良" subtitle="1986" />
-    <BioElement title="神戸大学工学部情報知能工学科" subtitle="2005〜2008" />
-    <BioElement
-      title="神戸大学大学院システム情報学研究科"
-      subtitle="2009〜2010"
-    />
-    <BioElement title="日立製作所" subtitle="2011〜2016" />
-    <BioElement title="フリーランス" subtitle="2016〜" />
-  </div>
-
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Experience</div>
   </div>
