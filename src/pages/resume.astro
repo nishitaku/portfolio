@@ -5,79 +5,135 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Resume" sideBarActiveItemID="resume">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-3xl w-full font-bold">経歴</div>
   </div>
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      class="mb-4"
-      title="フロントエンドエンジニア at 電子チケットサービス"
-      subtitle="2022年1月 〜 現在"
+      title="電子チケットサービス開発"
+      subtitle="2022年1月 〜 2023年7月(予定)"
     >
-      <span class="badge badge-primary">Angular</span>
-      <span class="badge badge-neutral">NG-ZORRO</span>
-      <span class="badge badge-neutral">Jest</span>
+      <ul class="list-disc list-inside">
+        <li>
+          フロントエンドエンジニアとして参画し、実装、コードレビュー、Angularアップデート等を担当
+        </li>
+        <li>テストコードを実装</li>
+        <li>デザインシステム構築のサポート</li>
+        <li>Angularやフロントエンド開発の情報発信</li>
+        <li>
+          <span class="badge badge-primary">Angular</span>
+          <span class="badge badge-neutral">NG-ZORRO</span>
+          <span class="badge badge-neutral">Jest</span>
+          <span class="badge badge-neutral">Testing Library</span>
+        </li>
+      </ul>
     </TimeLineElement>
 
     <TimeLineElement
-      class="mb-4"
-      title="フロントエンドエンジニア/DevOpsエンジニア at Webノートアプリ"
+      title="Webノートアプリ開発"
       subtitle="2021年1月 〜 2022年1月"
     >
-      <span class="badge badge-primary">Angular</span>
-      <span class="badge badge-neutral">Angular Material</span>
-      <span class="badge badge-neutral">CodePipeline</span>
+      <ul class="list-disc list-inside">
+        <li>複数人同時編集が可能なWebノートアプリの開発</li>
+        <li>実装、コードレビュー、Angularアップデート等を担当</li>
+        <li>AWS CodePipelineを使ったCI/CDの構築</li>
+        <li>Swaggerを使ったAPIドキュメントの作成</li>
+        <li>
+          サーバーからの通知(WebSocket)されるデータの取り回しが難しかったプロジェクト
+        </li>
+        <li>
+          <span class="badge badge-primary">Angular</span>
+          <span class="badge badge-neutral">Angular Material</span>
+          <span class="badge badge-neutral">CodePipeline</span>
+        </li>
+      </ul>
     </TimeLineElement>
 
     <TimeLineElement
-      class="mb-4"
-      title="フルスタックエンジニア at 錠剤検査システム"
+      title="錠剤検査システムプロトタイプ開発"
       subtitle="2021年2月 〜 2021年3月"
     >
-      <span class="badge badge-primary">Angular</span>
-      <span class="badge badge-neutral">Tailwind CSS</span>
-      <span class="badge badge-neutral">Nest.js</span>
-      <span class="badge badge-neutral">MongoDB</span>
+      <ul class="list-disc list-inside">
+        <li>
+          検査装置の保存した画像ファイルの検索、検査装置のパラメータを変更するためのWebアプリ
+        </li>
+        <li>フロントエンド、バックエンドをTypeScriptで構築</li>
+        <li>
+          <span class="badge badge-primary">Angular</span>
+          <span class="badge badge-neutral">Tailwind CSS</span>
+          <span class="badge badge-neutral">Nest.js</span>
+          <span class="badge badge-neutral">MongoDB</span>
+        </li>
+      </ul>
     </TimeLineElement>
 
     <TimeLineElement
-      class="mb-4"
-      title="iOSエンジニア at ノートアプリ"
+      title="iOSノートアプリ開発"
       subtitle="2020年4月 〜 2021年1月"
     >
-      <span class="badge badge-neutral">Swift</span>
+      <ul class="list-disc list-inside">
+        <li>プロトタイプをVIPERアーキテクチャベースにリファクタリング</li>
+        <li>
+          Swiftは未経験だっため、書籍を読んだり、勉強会に参加したりして、基本を習得しながら作業を進めた
+        </li>
+        <li>
+          <span class="badge badge-neutral">Swift</span>
+        </li>
+      </ul>
     </TimeLineElement>
 
     <TimeLineElement
-      class="mb-4"
-      title="フルスタックエンジニア at IoTファイル管理システム"
-      subtitle="2020年2月 〜 2020年3月"
+      title="カラオケ予約LINEアプリ開発"
+      subtitle="2020年1月 〜 2020年3月"
     >
-      <span class="badge badge-primary">Angular</span>
-      <span class="badge badge-neutral">PrimeNG</span>
-      <span class="badge badge-neutral">Nest.js</span>
-      <span class="badge badge-neutral">DynamoDB</span>
+      <ul class="list-disc list-inside">
+        <li>カラオケ店舗の空室検索、予約をおこなうLINEアプリ</li>
+        <li>
+          エンジニアは自分のみの環境だったため、フロントエンド、バックエンド、インフラの全てを担当
+        </li>
+        <li>
+          <span class="badge badge-neutral">Vue.js</span>
+          <span class="badge badge-neutral">Firebase Hosting</span>
+          <span class="badge badge-neutral">Firestore</span>
+          <span class="badge badge-neutral">Cluod Functions</span>
+        </li>
+      </ul>
+    </TimeLineElement>
+
+    <TimeLineElement title="木材検査システム" subtitle="2019年7月 〜 2020年2月">
+      <ul class="list-disc list-inside">
+        <li>
+          既存システムが保存した木材画像の検索や、検査シミュレーションするためのWebアプリ
+        </li>
+        <li>
+          フロントエンド(Angular)の画面開発、バックエンド(Express)のAPI開発を担当
+        </li>
+        <li>
+          <span class="badge badge-primary">Angular</span>
+          <span class="badge badge-neutral">Express</span>
+          <span class="badge badge-neutral">MongoDB</span>
+        </li>
+      </ul>
     </TimeLineElement>
 
     <TimeLineElement
-      class="mb-4"
-      title="フルスタックエンジニア at 木材検査システム"
-      subtitle="2019年7月 〜 2020年2月"
-    >
-      <span class="badge badge-primary">Angular</span>
-      <span class="badge badge-neutral">Express</span>
-      <span class="badge badge-neutral">MongoDB</span>
-    </TimeLineElement>
-
-    <TimeLineElement
-      class="mb-4"
-      title="フルスタックエンジニア at 通信販売基幹システム"
+      title="通信販売基幹システム"
       subtitle="2019年1月 〜 2019年6月"
     >
-      <span class="badge badge-primary">Angular</span>
-      <span class="badge badge-neutral">Bulma</span>
-      <span class="badge badge-neutral">Nest.js</span>
-      <span class="badge badge-neutral">MongoDB</span>
+      <ul class="list-disc list-inside">
+        <li>
+          楽天、Yahoo!ショッピングなどのショッピングサイトの注文情報、在庫情報を管理するWebアプリ
+        </li>
+        <li>
+          フロントエンド(Angular)の画面開発、バックエンド(Nest.js)のAPI開発を担当
+        </li>
+        <li>
+          <span class="badge badge-primary">Angular</span>
+          <span class="badge badge-neutral">Bulma</span>
+          <span class="badge badge-neutral">Nest.js</span>
+          <span class="badge badge-neutral">MongoDB</span>
+        </li>
+      </ul>
     </TimeLineElement>
   </div>
 
