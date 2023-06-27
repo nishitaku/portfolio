@@ -1,13 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCollection } from "astro:content";
-import BioElement from "../components/Bio.astro";
-
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
-
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -16,19 +8,6 @@ const last_posts = posts.slice(0, 3);
       I'm <span class="text-primary">nishitaku</span>
     </div>
     <div class="text-3xl py-3 font-bold">a freelance software engineer.</div>
-
-    <!-- <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank">
-        Let's connect!</a
-      >
-      <a
-        href="https://github.com/manuelernestog/astrofy"
-        target="_blank"
-        class="btn btn-outline ml-5"
-      >
-        Get This template
-      </a>
-    </div> -->
   </div>
 
   <div class="mb-2">
@@ -53,7 +32,7 @@ const last_posts = posts.slice(0, 3);
     <ul class="list-disc list-inside">
       <li>ゼロベース思考が得意です。要件の本質を理解して取り組みます</li>
       <li>ウォーターフォールよりアジャイルの方が好みです</li>
-      <li>マルチタスクをこなすよりもシングルタスクを深く考える方が得意</li>
+      <li>マルチタスクをこなすよりもシングルタスクを深く考える方が得意です</li>
     </ul>
   </div>
 
@@ -64,9 +43,9 @@ const last_posts = posts.slice(0, 3);
   <div class="py-2 mb-10">
     <ul class="list-disc list-inside">
       <li>フルリモート勤務</li>
-      <li>稼働時間は9時〜18時(相談可能)</li>
+      <li>レンタルPC不可</li>
+      <li>稼働時間は9時〜18時</li>
       <li>子どもがいるので、急遽お休みすることがあります</li>
-      <li>自分のPCを使いたいです</li>
     </ul>
   </div>
 
@@ -78,41 +57,7 @@ const last_posts = posts.slice(0, 3);
     <ul class="list-disc list-inside">
       <li>情報がオープンになっている現場</li>
       <li>心理的安全性の高い現場</li>
+      <li></li>
     </ul>
   </div>
-
-  <div>
-    <div class="text-2xl w-full font-bold mb-5">Bio</div>
-  </div>
-
-  <div class="time-line-container grid gap-2">
-    <BioElement title="Born in 奈良" subtitle="1986" />
-    <BioElement title="神戸大学工学部情報知能工学科" subtitle="2005〜2008" />
-    <BioElement
-      title="神戸大学大学院システム情報学研究科"
-      subtitle="2009〜2010"
-    />
-    <BioElement title="日立製作所" subtitle="2011〜2016" />
-    <BioElement title="フリーランス" subtitle="2016〜" />
-  </div>
-
-  <!-- <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  } -->
 </BaseLayout>
