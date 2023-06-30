@@ -8,7 +8,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://nishitaku.github.io/portfolio',
+  site: 'https://nishitaku.github.io',
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
