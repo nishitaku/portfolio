@@ -1,6 +1,7 @@
 ---
 title: "Demo Post 3"
 pubDate: "2023-09-21 19:48:12"
+updatedDate: "2023-09-30 19:48:12"
 heroImage: "/post_img.webp"
 tags: ["Angular", "Signals"]
 ---
