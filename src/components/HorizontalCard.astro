@@ -1,38 +1,22 @@
 ---
-const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
-import { Image } from "@astrojs/image/components";
+const { title, url, tags, target = "_blank", pubDate } = Astro.props;
 ---
 
-<div
-  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
->
-  <a href={url} target={target}>
-    <div class="hero-content flex-col md:flex-row">
+<a href={url} target={target}>
+  <article class="group card w-96 bg-neutral-50 px-4 py-3">
+    <header>
+      <time datetime={pubDate.toISOString()} class="text-xs text-gray-500"
+        >{pubDate.toLocaleDateString()}</time
+      >
+    </header>
+    <h2 class="group-hover:link">{title}</h2>
+    <footer class="mt-px card-actions">
       {
-        img && (
-          <Image
-            src={img}
-            aspectRatio="16:9"
-            width={750}
-            format="webp"
-            alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
-          />
-        )
+        tags &&
+          tags.map((tag) => (
+            <div class="badge badge-ghost badge-sm">#{tag}</div>
+          ))
       }
-      <div class="grow w-full">
-        <h1 class="text-xl font-bold">
-          {title}
-          {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
-        </h1>
-        <p class="py-1 text-1xl">{desc}</p>
-        <div class="card-actions justify-end">
-          {
-            tags &&
-              tags.map((tag) => <div class="badge badge-outline">{tag}</div>)
-          }
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
+    </footer>
+  </article>
+</a>
