@@ -55,5 +55,12 @@
       "body": "<iframe class=\"hatenablogcard border-none w-full\" src=\"https://hatenablog-parts.com/embed?url={リンク先のURL}\" height=\"155\"></iframe>",
       "fields": []
     }
-  }
+  },
+  "frontMatter.custom.scripts": [
+    {
+      "title": "OGP画像生成",
+      "script": "./scripts/social-img.js",
+      "nodeBin": "/usr/local/bin/node"
+    }
+  ]
 }
