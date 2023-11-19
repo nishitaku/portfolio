@@ -6,13 +6,13 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 
 export interface Props extends BlogSchema {}
 
-const { title, pubDate, updatedDate, tags } = Astro.props;
+const { title, pubDate, updatedDate, heroImage, tags } = Astro.props;
 dayjs.extend(localizedFormat);
 ---
 
-<BaseLayout title={title}>
+<BaseLayout title={title} image={heroImage}>
   <main class="md:flex md:justify-center">
-    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+    <article class="prose">
       {
         updatedDate ? (
           <time
