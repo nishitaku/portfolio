@@ -1,17 +1,42 @@
 ---
-title: "Demo Post 3"
-pubDate: "2023-09-21 19:48:12"
-updatedDate: "2023-09-30 19:48:12"
-heroImage: "/post_img.webp"
-tags: ["Angular", "Signals"]
+title: ブログサンプルブログサンプルブログサンプルブログサンプルブログサンプル
+pubDate: 2023-11-03T05:17:58.520Z
+updatedDate: 2023-11-03T05:18:14.020Z
+tags:
+  - Angular
+  - Signals
+heroImage: ../social/post3.png
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+```javascript
+function hogehoge() {
+  // コメント
+  const a = 10;
+  return a * 10;
+}
+```
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+![](/ogp.jpeg)
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+# 段落1
+## 段落2
+### 段落3
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+# こんにちは！
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+このMarkdownファイルは `your-domain.com/page-1/`にページを作成します。
+
+過去に僕はとある開発チームに所属していて（ほぼフルリモートという環境もあり）、メンバーとは主にSlack上でコミュニケーションを取っていました。メインとなるのはimplという名のついたチャンネルでしたが、投稿数は1日に数件ほどでした。もっとカジュアルにコミュニケーションを取れるように、新しくwaigayaという名のついたチャンネルを作り、そちらをメインにしました。そうしたらこれが功を奏して、雑談から開発上の相談までコミュニケーションの量が格段に増え、投稿数は何倍にもなりました。一時期はその会社の全Slackチャンネルの中で一番の投稿数になったこともありました。自分でも驚いたのが、これは単純にチャンネルの名前が変わっただけで起きたということです。この件で実感したのが「口実」が持つ力の強さです。
+
+スタイリングとしてはおそらく不十分ですが、Markdownは以下をサポートしています。
+- **太字** と _イタリック_
+- リスト
+- [リンク](https://astro.build)
+- などなど
+
+
+<iframe class="hatenablogcard border-none w-full" src="https://hatenablog-parts.com/embed?url=https://github.com/lacolaco/blog.lacolaco.net/blob/main/src/pages/og/[slug].png.ts" height="155">
+  </iframe>
+
+<iframe class="hatenablogcard border-none w-full" src="https://hatenablog-parts.com/embed?url=https://zenn.dev/ikuma/scraps/2bd2b9dc3605d7" height="155">
+  </iframe>
