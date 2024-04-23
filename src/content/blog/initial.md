@@ -3,7 +3,7 @@ title: ブログページを追加しました
 pubDate: 2024-04-23T13:47:52.025Z
 tags:
   - 雑記
-heroImage: ../social/ogp.jpeg
+heroImage: ../social/ogp/initial.png
 ---
 
 技術的な内容はQiitaやZennのような、広く読まれるサービスで書くのがいいと思う。
