@@ -98,10 +98,10 @@ if (aarguments && aarguments.length > 0 && aarguments[2]) {
 
     // @ts-ignore
     nodeHtmlToImage({
-      output: `${workspaceArg}/public/social/${fileName}`,
+      output: `${workspaceArg}/public/social/ogp/${fileName}`,
       html: parsedHtml,
     })
-      .then(() => console.log(`preview: "/social/${fileName}"`))
+      .then(() => console.log(`preview: "/social/ogp/${fileName}"`))
       .catch((e) => console.log(e?.message || e));
   }
 }
