@@ -1,0 +1,66 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "astro",
+  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "blog",
+      "path": "[[workspace]]/src/content/blog"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": "'blog'",
+      "filePrefix": null,
+      "clearEmpty": true,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Publishing date",
+          "name": "pubDate",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "heroImage",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "updatedDate",
+          "name": "updatedDate",
+          "type": "datetime"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.snippets": {
+    "画像リンク": {
+      "description": "画像リンク用iframeのコード",
+      "body": "<iframe class=\"hatenablogcard border-none w-full\" src=\"https://hatenablog-parts.com/embed?url={リンク先のURL}\" height=\"155\"></iframe>",
+      "fields": []
+    }
+  },
+  "frontMatter.custom.scripts": [
+    {
+      "title": "OGP画像生成",
+      "script": "./scripts/social-img.js",
+      "nodeBin": "/Users/nishitaku/.volta/bin/node"
+    }
+  ]
+}

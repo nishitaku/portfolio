@@ -6,41 +6,36 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 
 export interface Props extends BlogSchema {}
 
-const { title, description, pubDate, updatedDate, heroImage, badge } =
-  Astro.props;
+const { title, pubDate, updatedDate, heroImage, tags } = Astro.props;
 dayjs.extend(localizedFormat);
-const displayDate = dayjs(pubDate).format("ll");
-import { Image } from "@astrojs/image/components";
 ---
 
-<BaseLayout title={title} description={description} image={heroImage}>
+<BaseLayout title={title} image={heroImage}>
   <main class="md:flex md:justify-center">
-    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+    <article class="prose">
       {
-        heroImage && (
-        <Image
-            aspectRatio={"16:9"}
-            width={750}
-            height={422}
-            format="webp"
-            src={heroImage}
-            alt={title}
-            class="w-full mb-6"
-          />
+        updatedDate ? (
+          <time
+            datetime={updatedDate.toISOString()}
+            class="text-xs text-gray-500"
+          >
+            {updatedDate.toLocaleDateString()}に更新
+          </time>
+        ) : (
+          <time datetime={pubDate.toISOString()} class="text-xs text-gray-500">
+            {pubDate.toLocaleDateString()}に公開
+          </time>
         )
       }
-      <h1 class="title my-2 text-4xl font-bold">{title}</h1>
-      {pubDate && <time>{displayDate}</time>}
-      <br />
-      {badge && <div class="badge badge-secondary my-1">{badge}</div>}
-      {
-        updatedDate && (
-          <div>
-            {" "}
-            Last updated on <time>{updatedDate}</time>{" "}
-          </div>
-        )
-      }
+      <h2 class="mt-0 mb-0 text-3xl font-bold">{title}</h2>
+      <div class="mt-2 flex flex-wrap gap-2">
+        {
+          tags &&
+            tags.map((tag) => (
+              <div class="badge badge-ghost badge-sm">#{tag}</div>
+            ))
+        }
+      </div>
       <div class="divider my-2"></div>
       <slot />
     </article>
