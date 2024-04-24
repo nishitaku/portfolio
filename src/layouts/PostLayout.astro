@@ -1,8 +1,8 @@
 ---
-import { BlogSchema } from "../content/config";
-import BaseLayout from "./BaseLayout.astro";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
+import { BlogSchema } from "../content/config";
+import BaseLayout from "./BaseLayout.astro";
 
 export interface Props extends BlogSchema {}
 
@@ -10,7 +10,7 @@ const { title, pubDate, updatedDate, heroImage, tags } = Astro.props;
 dayjs.extend(localizedFormat);
 ---
 
-<BaseLayout title={title} image={heroImage}>
+<BaseLayout title={title} image={heroImage} sideBarActiveItemID="blog">
   <main class="md:flex md:justify-center">
     <article class="prose">
       {
