@@ -10,6 +10,10 @@ export interface Props {
 }
 
 const { title, description, image = "./ogp.jpeg" } = Astro.props;
+const ogpImage = new URL(
+  `social/ogp/${image}`,
+  new URL(import.meta.env.BASE_URL, Astro.url.origin)
+);
 ---
 
 <!-- Global Metadata -->
@@ -38,7 +42,7 @@ const { title, description, image = "./ogp.jpeg" } = Astro.props;
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:image" content={ogpImage} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
@@ -46,4 +50,4 @@ const { title, description, image = "./ogp.jpeg" } = Astro.props;
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:image" content={ogpImage} />
