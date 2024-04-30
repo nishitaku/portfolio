@@ -1,7 +1,7 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import TimeLineElement from "../components/TimeLine.astro";
 import BioElement from "../components/Bio.astro";
+import TimeLineElement from "../components/TimeLine.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="resume">
@@ -11,18 +11,45 @@ import BioElement from "../components/Bio.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="電子チケットサービス開発"
-      subtitle="2022年1月 〜 2023年7月(予定)"
+      title="クリニック向け業務管理サービス開発"
+      subtitle="2024年4月 〜 "
     >
       <ul class="list-disc list-inside">
+        <li>フロントエンドの実装</li>
         <li>
-          フロントエンドエンジニアとして参画し、実装、コードレビュー、Angularアップデート等を担当
+          <span class="badge badge-primary">Angular v13</span>
+          <span class="badge badge-neutral">NGXS</span>
         </li>
-        <li>テストコードを実装</li>
+      </ul>
+    </TimeLineElement>
+
+    <TimeLineElement title="契約書管理サービス開発" subtitle="2023年8月 〜 ">
+      <ul class="list-disc list-inside">
+        <li>フロントエンドの実装、コードレビュー</li>
+        <li>Github Actionsを使ったCI/CDフローの構築</li>
+        <li>
+          <span class="badge badge-primary">Angular v15/v16/v17</span>
+          <span class="badge badge-neutral">Nx</span>
+          <span class="badge badge-neutral">Ngrx</span>
+          <span class="badge badge-neutral">Github Actions</span>
+          <span class="badge badge-neutral">Tailwind CSS</span>
+          <span class="badge badge-neutral">Jest</span>
+          <span class="badge badge-neutral">Testing Library</span>
+        </li>
+      </ul>
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="電子チケットサービス開発"
+      subtitle="2022年1月 〜 2023年7月"
+    >
+      <ul class="list-disc list-inside">
+        <li>フロントエンドエンジニアの実装、コードレビュー</li>
+        <li>Angularアップデート</li>
         <li>デザインシステム構築のサポート</li>
         <li>Angularやフロントエンド開発の情報発信</li>
         <li>
-          <span class="badge badge-primary">Angular</span>
+          <span class="badge badge-primary">Angular v14/v15</span>
           <span class="badge badge-neutral">NG-ZORRO</span>
           <span class="badge badge-neutral">Jest</span>
           <span class="badge badge-neutral">Testing Library</span>
@@ -43,7 +70,7 @@ import BioElement from "../components/Bio.astro";
           サーバーからの通知(WebSocket)されるデータの取り回しが難しかったプロジェクト
         </li>
         <li>
-          <span class="badge badge-primary">Angular</span>
+          <span class="badge badge-primary">Angular v13</span>
           <span class="badge badge-neutral">Angular Material</span>
           <span class="badge badge-neutral">CodePipeline</span>
         </li>
