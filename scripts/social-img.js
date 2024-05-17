@@ -70,7 +70,7 @@ const html = `
           "
         >
           <img
-            src="https://nishitaku.github.io/portfolio/_astro/icon_Z2vSNqJ.webp"
+            src="https://nishitaku.github.io/portfolio/_astro/icon.0e424ac4_Z1woQbt.webp"
             width="40px"
             style="border-radius: 50%"
           />
