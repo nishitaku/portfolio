@@ -1,6 +1,6 @@
 ---
 title: 参考書は紙がよい
-pubDate: 2024-05-22T15:34:46.346Z
+pubDate: 2024-05-24T00:00:43.269Z
 tags:
   - 雑記
 heroImage: paper-book-better-than-e-book.png
