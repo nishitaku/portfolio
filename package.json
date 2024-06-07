@@ -22,6 +22,7 @@
     "sharp": "^0.33.3"
   },
   "devDependencies": {
+    "@astrojs/partytown": "^2.1.0",
     "@tailwindcss/typography": "^0.5.9",
     "node-html-to-image": "4.0.0"
   }
