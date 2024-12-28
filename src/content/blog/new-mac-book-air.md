@@ -1,6 +1,7 @@
 ---
 title: とあるフロントエンドエンジニアの開発環境（アプリ編）
 pubDate: 2024-12-22T04:32:47.032Z
+heroImage: new-mac-book-air.png
 tags:
   - 開発環境
 ---
