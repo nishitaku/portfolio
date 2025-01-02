@@ -9,7 +9,7 @@ export interface Props {
   image?: string;
 }
 
-const { title, description, image = "./ogp.jpeg" } = Astro.props;
+const { title, description, image = "./default.jpeg" } = Astro.props;
 const ogpImage = new URL(
   `social/ogp/${image}`,
   new URL(import.meta.env.BASE_URL, Astro.url.origin)
