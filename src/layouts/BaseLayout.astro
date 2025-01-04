@@ -1,10 +1,10 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import SideBar from "../components/SideBar.astro";
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SideBar from '../components/SideBar.astro';
 
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
 const {
   image,
@@ -15,19 +15,21 @@ const {
 } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja" data-theme="corporate">
   <head>
     <BaseHead title={title} description={description} image={image} />
     <!-- Google tag (gtag.js) -->
-    <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-NJ3TLLJYYK"></script>
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-NJ3TLLJYYK"></script>
     <script type="text/partytown">
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-NJ3TLLJYYK');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-NJ3TLLJYYK');
     </script>
   </head>
   <body>
