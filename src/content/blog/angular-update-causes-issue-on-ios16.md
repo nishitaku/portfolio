@@ -1,6 +1,6 @@
 ---
 title: Angular をアップデートしたら iOS16 で動かなくなった話
-pubDate: 2025-01-01T14:13:59.774Z
+pubDate: 2025-01-07T23:59:42.808Z
 heroImage: angular-update-causes-issue-on-ios16.png
 tags:
   - Angular
