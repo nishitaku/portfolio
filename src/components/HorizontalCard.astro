@@ -1,5 +1,5 @@
 ---
-const { title, url, tags, target = "_blank", pubDate } = Astro.props;
+const { title, url, tags, target = '_blank', pubDate } = Astro.props;
 ---
 
 <a href={url} target={target}>
@@ -10,7 +10,7 @@ const { title, url, tags, target = "_blank", pubDate } = Astro.props;
       >
     </header>
     <h2 class="group-hover:link">{title}</h2>
-    <footer class="mt-px card-actions">
+    <footer class="card-actions mt-px">
       {
         tags &&
           tags.map((tag) => (

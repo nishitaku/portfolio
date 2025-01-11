@@ -9,7 +9,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier -w ."
   },
   "dependencies": {
     "@astrojs/mdx": "^3.0.1",
@@ -25,7 +26,10 @@
   "devDependencies": {
     "@astrojs/partytown": "^2.1.0",
     "@tailwindcss/typography": "^0.5.9",
-    "node-html-to-image": "4.0.0"
+    "node-html-to-image": "4.0.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.9"
   },
   "packageManager": "pnpm@8.15.8"
 }

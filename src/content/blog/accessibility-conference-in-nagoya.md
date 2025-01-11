@@ -9,11 +9,9 @@ heroImage: accessibility-conference-in-nagoya.png
 
 <iframe class="hatenablogcard border-none w-full" src="https://hatenablog-parts.com/embed?url=https://nagoya.a11yconf.net/" height="155"></iframe>
 
-
 ## きっかけ
 
 1年ほど前から開発のお手伝いをしているSaaSが、アクセシビリティを意識したデザインシステムになっていて、ちょっと勉強したいと思ったので。
-
 
 ## 意思疎通支援システムYYSystem
 
@@ -23,7 +21,6 @@ heroImage: accessibility-conference-in-nagoya.png
 
 **インクルーシブデザイン**という言葉は初めて聞いたので、勉強になった。マイノリティをターゲットにする考え方なので、ビジネスとしては難しい。ただ、今後高齢化が進む社会では、マジョリティなり得るので、準備しておくことが大事。さらに、社会と個人の両方からのアプローチがあって、例えば、車椅子の人が階段を登れずに困っているケースだと、階段をスロープに変えるのが前者、車椅子が階段を登れるよう改良するのが後者。
 
-
 ## 誰もが親しみやすい色使いへ カラーパレットのアクセシビリティ改善の流れ
 
 [株式会社エスケイワード](https://www.skword.co.jp/)のスポンサーセッション。日本語上手だった。
@@ -31,12 +28,12 @@ heroImage: accessibility-conference-in-nagoya.png
 既存のアプリケーションの配色を、WCAG 2.2(適合レベルAA)に準拠したコントラスト比の配色に修正する話。
 
 コントラスト比を確認したりするのに便利そうなツール
+
 - Adobe Color
 - Stark - Contrast & Accessibility Checker (Figma Plugin)
 - [Tanaguru contrast finder](https://contrast-finder.tanaguru.com/)
 
 デザインシステムを構築するときに、コントラスト比も意識しようね、という学び。
-
 
 ## 受託制作ウェブアクセシビリティ現場最前線
 
@@ -56,7 +53,6 @@ heroImage: accessibility-conference-in-nagoya.png
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">AAA11YにAAAのサイトがひとつもないのは、WCAGではAAAを適合要件にするのが推奨されてないからです、というのを補足したい<a href="https://t.co/w29aoxWlGG">https://t.co/w29aoxWlGG</a><br><br> <a href="https://twitter.com/hashtag/nagoya_a11yconf?src=hash&amp;ref_src=twsrc%5Etfw">#nagoya_a11yconf</a></p>&mdash; Rikiya Ihara / magi (@magi1125) <a href="https://twitter.com/magi1125/status/1832309830536851797?ref_src=twsrc%5Etfw">September 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 ## 「人にやさしい情報発信」をめざして～花王の4年間のウェブアクセシビリティの道のり～
 
 シャンプーや洗剤でおなじみ、花王グループ。
@@ -67,7 +63,6 @@ heroImage: accessibility-conference-in-nagoya.png
 
 海外では訴訟リスクもあるので、海外展開しているサイトは特に重要になる。
 
-
 ## 社内を動かすアクセシビリティ戦略
 
 株式会社Qiitaのスポンサーセッション。
@@ -75,7 +70,6 @@ heroImage: accessibility-conference-in-nagoya.png
 <iframe class="hatenablogcard border-none w-full" src="https://hatenablog-parts.com/embed?url=https://blog.qiita.com/accessibility-project/" height="155"></iframe>
 
 組織的に取り組む場合、開発者の協力を得るには「アクセシビリティを意識して実装する」ではなく、「セマンティックなマークアップにしていく」のような具体的な目標設定が効果的。
-
 
 ## アクセシビリティでキャリアを築く
 
@@ -85,11 +79,9 @@ Webアクセシビリティでキャリアを積んできた、業界で著名�
 
 アクセシビリティの仕事を受注したいなら、ハッタリも大事。肩書きから始めるのもあり。
 
-
 ## 懇親会
 
 福岡や北海道から来てる人がいて、Web業界でのアクセシビリティへの関心の高まりを感じた。
-
 
 ## まとめ
 
@@ -98,7 +90,6 @@ Webアクセシビリティでキャリアを積んできた、業界で著名�
 このサイトも勉強になる。
 
 <iframe class="hatenablogcard border-none w-full" src="https://hatenablog-parts.com/embed?url=https://porta11y.d-zero.co.jp/" height="155"></iframe>
-
 
 アクセシビリティ ✕ フロントエンドエンジニア、というブランディングもよさそう。
 

@@ -31,7 +31,6 @@ export default defineConfig({
 });
 ```
 
-
 ## 本番環境でプロフィール画像が表示されなくなった
 
 デプロイ先が`/portfolio/public/icon.jpg`から`portfolio/icon.jpg`になっていた。
@@ -44,12 +43,10 @@ export default defineConfig({
 
 ```astro
 ---
-import iconImage from "../images/icon.jpg";
+import iconImage from '../images/icon.jpg';
 ---
 
-<Image
-  src={iconImage}
-/>
+<Image src={iconImage} />
 ```
 
 なお、OGP画像も同じ原因で表示されなくなっていたため、そちらは参照先を変更して対応した。

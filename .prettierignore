@@ -1,0 +1,9 @@
+# Add files here to ignore them from prettier formatting
+.astro
+.frontmatter
+.github
+.vscode
+node_modules
+pnpm-lock.yaml
+
+# ignore third party files

@@ -11,12 +11,10 @@ tags:
 ある Angular アプリケーションが、一部端末で画面が表示されなくなる不具合が発生した。
 アクセスログを解析したところ、 iOS16 のユーザーでエラーが発生していることが判明した。
 
-
 ## 原因と対応
 
 Angular のバージョンを v15 から v17 にアップデートしたことで、iOS16 のブラウザががサポート対象外になってしまったことが原因だった。
 当該アプリケーションでは Angular のデフォルト設定をサポート対象としていたため、`Browserslist`を、iOS16 をサポートするよう修正することで対応した。
-
 
 ## Browserslist
 
@@ -185,4 +183,3 @@ safari 17.0
 また、Angular を v19 にアップデートすると、`Safari < 15`で動かなくなる問題があるため、注意が必要である。
 
 <iframe class="hatenablogcard border-none w-full" src="https://hatenablog-parts.com/embed?url=https://github.com/angular/angular-cli/issues/29145" height="155"></iframe>
-

@@ -1,6 +1,6 @@
 //@ts-check
-import nodeHtmlToImage from "node-html-to-image";
-import Path from "path";
+import nodeHtmlToImage from 'node-html-to-image';
+import Path from 'path';
 
 const html = `
 <html>
@@ -90,7 +90,7 @@ if (aarguments && aarguments.length > 0 && aarguments[2]) {
   const postFileName = Path.parse(fileArg).name;
   const dataArg = aarguments[4];
   const data =
-    dataArg && typeof dataArg === "string" ? JSON.parse(dataArg) : null;
+    dataArg && typeof dataArg === 'string' ? JSON.parse(dataArg) : null;
 
   if (data.title) {
     const parsedHtml = html.replace(`{title}`, data.title);

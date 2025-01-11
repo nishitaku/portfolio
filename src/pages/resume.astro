@@ -1,12 +1,12 @@
 ---
-import BioElement from "../components/Bio.astro";
-import TimeLineElement from "../components/TimeLine.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BioElement from '../components/Bio.astro';
+import TimeLineElement from '../components/TimeLine.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="resume">
   <div class="mb-5">
-    <div class="text-2xl w-full font-bold">経歴</div>
+    <div class="w-full text-2xl font-bold">経歴</div>
   </div>
 
   <div class="time-line-container mb-10">
@@ -14,7 +14,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       title="クリニック向け業務管理サービス開発"
       subtitle="2024年4月 〜 "
     >
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>フロントエンドの実装</li>
         <li>
           <span class="badge badge-primary">Angular v13</span>
@@ -24,7 +24,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </TimeLineElement>
 
     <TimeLineElement title="契約書管理サービス開発" subtitle="2023年8月 〜 ">
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>フロントエンドの実装、コードレビュー</li>
         <li>Github Actionsを使ったCI/CDフローの構築</li>
         <li>
@@ -43,7 +43,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       title="電子チケットサービス開発"
       subtitle="2022年1月 〜 2023年7月"
     >
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>フロントエンドエンジニアの実装、コードレビュー</li>
         <li>Angularアップデート</li>
         <li>デザインシステム構築のサポート</li>
@@ -61,7 +61,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       title="Webノートアプリ開発"
       subtitle="2021年1月 〜 2022年1月"
     >
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>複数人同時編集が可能なWebノートアプリの開発</li>
         <li>実装、コードレビュー、Angularアップデート等を担当</li>
         <li>AWS CodePipelineを使ったCI/CDの構築</li>
@@ -81,7 +81,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       title="錠剤検査システムプロトタイプ開発"
       subtitle="2021年2月 〜 2021年3月"
     >
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>
           検査装置の保存した画像ファイルの検索、検査装置のパラメータを変更するためのWebアプリ
         </li>
@@ -99,7 +99,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       title="iOSノートアプリ開発"
       subtitle="2020年4月 〜 2021年1月"
     >
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>プロトタイプをVIPERアーキテクチャベースにリファクタリング</li>
         <li>
           Swiftは未経験だっため、書籍を読んだり、勉強会に参加したりして、基本を習得しながら作業を進めた
@@ -114,7 +114,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       title="カラオケ予約LINEアプリ開発"
       subtitle="2020年1月 〜 2020年3月"
     >
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>カラオケ店舗の空室検索、予約をおこなうLINEアプリ</li>
         <li>
           エンジニアは自分のみの環境だったため、フロントエンド、バックエンド、インフラの全てを担当
@@ -129,7 +129,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </TimeLineElement>
 
     <TimeLineElement title="木材検査システム" subtitle="2019年7月 〜 2020年2月">
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>
           既存システムが保存した木材画像の検索や、検査シミュレーションするためのWebアプリ
         </li>
@@ -148,7 +148,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       title="通信販売基幹システム"
       subtitle="2019年1月 〜 2019年6月"
     >
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>
           楽天、Yahoo!ショッピングなどのショッピングサイトの注文情報、在庫情報を管理するWebアプリ
         </li>
@@ -166,10 +166,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
 
   <div class="mb-5">
-    <div class="text-2xl w-full font-bold">Bio</div>
+    <div class="w-full text-2xl font-bold">Bio</div>
   </div>
 
-  <div class="time-line-container grid gap-2 mb-10">
+  <div class="time-line-container mb-10 grid gap-2">
     <BioElement title="Born in 奈良" subtitle="1986" />
     <BioElement title="神戸大学工学部情報知能工学科" subtitle="2005〜2008" />
     <BioElement
@@ -181,7 +181,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
 
   <div class="mb-5">
-    <div class="text-2xl w-full font-bold">OSSコミット</div>
+    <div class="w-full text-2xl font-bold">OSSコミット</div>
   </div>
 
   <div class="mb-10">
@@ -196,10 +196,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
 
   <div class="mb-5">
-    <div class="text-2xl w-full font-bold">資格</div>
+    <div class="w-full text-2xl font-bold">資格</div>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
+  <ul class="mx-6 mb-10 grid list-disc gap-2">
     <li>ネットワークスペシャリスト (2015年10月)</li>
     <li>データベーススペシャリスト (2014年4月)</li>
     <li>セキュリティスペシャリスト (2012年10月)</li>
