@@ -5,204 +5,225 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="resume">
-  <div class="mb-5">
-    <div class="w-full text-2xl font-bold">経歴</div>
+  <div>
+    <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">Resume</h1>
   </div>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="クリニック向け業務管理サービス開発"
-      subtitle="2024年4月 〜 "
-    >
-      <ul class="list-inside list-disc">
-        <li>フロントエンドの実装</li>
-        <li>
-          <span class="badge badge-primary">Angular v13</span>
-          <span class="badge badge-neutral">NGXS</span>
-        </li>
-      </ul>
-    </TimeLineElement>
+  <div class="mt-12">
+    <div>
+      <h2 class="w-full text-2xl font-bold">経歴</h2>
+    </div>
 
-    <TimeLineElement title="契約書管理サービス開発" subtitle="2023年8月 〜 ">
-      <ul class="list-inside list-disc">
-        <li>フロントエンドの実装、コードレビュー</li>
-        <li>Github Actionsを使ったCI/CDフローの構築</li>
-        <li>
-          <span class="badge badge-primary">Angular v15/v16/v17</span>
-          <span class="badge badge-neutral">Nx</span>
-          <span class="badge badge-neutral">Ngrx</span>
-          <span class="badge badge-neutral">Github Actions</span>
-          <span class="badge badge-neutral">Tailwind CSS</span>
-          <span class="badge badge-neutral">Jest</span>
-          <span class="badge badge-neutral">Testing Library</span>
-        </li>
-      </ul>
-    </TimeLineElement>
-
-    <TimeLineElement
-      title="電子チケットサービス開発"
-      subtitle="2022年1月 〜 2023年7月"
-    >
-      <ul class="list-inside list-disc">
-        <li>フロントエンドエンジニアの実装、コードレビュー</li>
-        <li>Angularアップデート</li>
-        <li>デザインシステム構築のサポート</li>
-        <li>Angularやフロントエンド開発の情報発信</li>
-        <li>
-          <span class="badge badge-primary">Angular v14/v15</span>
-          <span class="badge badge-neutral">NG-ZORRO</span>
-          <span class="badge badge-neutral">Jest</span>
-          <span class="badge badge-neutral">Testing Library</span>
-        </li>
-      </ul>
-    </TimeLineElement>
-
-    <TimeLineElement
-      title="Webノートアプリ開発"
-      subtitle="2021年1月 〜 2022年1月"
-    >
-      <ul class="list-inside list-disc">
-        <li>複数人同時編集が可能なWebノートアプリの開発</li>
-        <li>実装、コードレビュー、Angularアップデート等を担当</li>
-        <li>AWS CodePipelineを使ったCI/CDの構築</li>
-        <li>Swaggerを使ったAPIドキュメントの作成</li>
-        <li>
-          サーバーからの通知(WebSocket)されるデータの取り回しが難しかったプロジェクト
-        </li>
-        <li>
-          <span class="badge badge-primary">Angular v13</span>
-          <span class="badge badge-neutral">Angular Material</span>
-          <span class="badge badge-neutral">CodePipeline</span>
-        </li>
-      </ul>
-    </TimeLineElement>
-
-    <TimeLineElement
-      title="錠剤検査システムプロトタイプ開発"
-      subtitle="2021年2月 〜 2021年3月"
-    >
-      <ul class="list-inside list-disc">
-        <li>
-          検査装置の保存した画像ファイルの検索、検査装置のパラメータを変更するためのWebアプリ
-        </li>
-        <li>フロントエンド、バックエンドをTypeScriptで構築</li>
-        <li>
-          <span class="badge badge-primary">Angular</span>
-          <span class="badge badge-neutral">Tailwind CSS</span>
-          <span class="badge badge-neutral">Nest.js</span>
-          <span class="badge badge-neutral">MongoDB</span>
-        </li>
-      </ul>
-    </TimeLineElement>
-
-    <TimeLineElement
-      title="iOSノートアプリ開発"
-      subtitle="2020年4月 〜 2021年1月"
-    >
-      <ul class="list-inside list-disc">
-        <li>プロトタイプをVIPERアーキテクチャベースにリファクタリング</li>
-        <li>
-          Swiftは未経験だっため、書籍を読んだり、勉強会に参加したりして、基本を習得しながら作業を進めた
-        </li>
-        <li>
-          <span class="badge badge-neutral">Swift</span>
-        </li>
-      </ul>
-    </TimeLineElement>
-
-    <TimeLineElement
-      title="カラオケ予約LINEアプリ開発"
-      subtitle="2020年1月 〜 2020年3月"
-    >
-      <ul class="list-inside list-disc">
-        <li>カラオケ店舗の空室検索、予約をおこなうLINEアプリ</li>
-        <li>
-          エンジニアは自分のみの環境だったため、フロントエンド、バックエンド、インフラの全てを担当
-        </li>
-        <li>
-          <span class="badge badge-neutral">Vue.js</span>
-          <span class="badge badge-neutral">Firebase Hosting</span>
-          <span class="badge badge-neutral">Firestore</span>
-          <span class="badge badge-neutral">Cluod Functions</span>
-        </li>
-      </ul>
-    </TimeLineElement>
-
-    <TimeLineElement title="木材検査システム" subtitle="2019年7月 〜 2020年2月">
-      <ul class="list-inside list-disc">
-        <li>
-          既存システムが保存した木材画像の検索や、検査シミュレーションするためのWebアプリ
-        </li>
-        <li>
-          フロントエンド(Angular)の画面開発、バックエンド(Express)のAPI開発を担当
-        </li>
-        <li>
-          <span class="badge badge-primary">Angular</span>
-          <span class="badge badge-neutral">Express</span>
-          <span class="badge badge-neutral">MongoDB</span>
-        </li>
-      </ul>
-    </TimeLineElement>
-
-    <TimeLineElement
-      title="通信販売基幹システム"
-      subtitle="2019年1月 〜 2019年6月"
-    >
-      <ul class="list-inside list-disc">
-        <li>
-          楽天、Yahoo!ショッピングなどのショッピングサイトの注文情報、在庫情報を管理するWebアプリ
-        </li>
-        <li>
-          フロントエンド(Angular)の画面開発、バックエンド(Nest.js)のAPI開発を担当
-        </li>
-        <li>
-          <span class="badge badge-primary">Angular</span>
-          <span class="badge badge-neutral">Bulma</span>
-          <span class="badge badge-neutral">Nest.js</span>
-          <span class="badge badge-neutral">MongoDB</span>
-        </li>
-      </ul>
-    </TimeLineElement>
-  </div>
-
-  <div class="mb-5">
-    <div class="w-full text-2xl font-bold">Bio</div>
-  </div>
-
-  <div class="time-line-container mb-10 grid gap-2">
-    <BioElement title="Born in 奈良" subtitle="1986" />
-    <BioElement title="神戸大学工学部情報知能工学科" subtitle="2005〜2008" />
-    <BioElement
-      title="神戸大学大学院システム情報学研究科"
-      subtitle="2009〜2010"
-    />
-    <BioElement title="日立製作所" subtitle="2011〜2016" />
-    <BioElement title="フリーランス" subtitle="2016〜" />
-  </div>
-
-  <div class="mb-5">
-    <div class="w-full text-2xl font-bold">OSSコミット</div>
-  </div>
-
-  <div class="mb-10">
-    Angular公式ドキュメントの日本語翻訳等。
-    <div class="mt-1">
-      <a
-        href="https://github.com/pulls?q=is%3Apr+archived%3Afalse+is%3Apublic+is%3Amerged+-user%3Anishitaku+author%3Anishitaku+"
-        target="_blank"
-        class="link link-primary">merged PR一覧</a
+    <div class="time-line-container mt-8">
+      <TimeLineElement
+        title="クリニック向け業務管理サービス開発"
+        subtitle="2024年4月 〜 "
       >
+        <ul class="list-inside list-disc">
+          <li>フロントエンドの実装</li>
+          <li>
+            <span class="badge badge-primary">Angular v13</span>
+            <span class="badge badge-neutral">NGXS</span>
+          </li>
+        </ul>
+      </TimeLineElement>
+
+      <TimeLineElement title="契約書管理サービス開発" subtitle="2023年8月 〜 ">
+        <ul class="list-inside list-disc">
+          <li>フロントエンドの実装、コードレビュー</li>
+          <li>Github Actionsを使ったCI/CDフローの構築</li>
+          <li>
+            <span class="badge badge-primary">Angular v15/v16/v17</span>
+            <span class="badge badge-neutral">Nx</span>
+            <span class="badge badge-neutral">Ngrx</span>
+            <span class="badge badge-neutral">Github Actions</span>
+            <span class="badge badge-neutral">Tailwind CSS</span>
+            <span class="badge badge-neutral">Jest</span>
+            <span class="badge badge-neutral">Testing Library</span>
+          </li>
+        </ul>
+      </TimeLineElement>
+
+      <TimeLineElement
+        title="電子チケットサービス開発"
+        subtitle="2022年1月 〜 2023年7月"
+      >
+        <ul class="list-inside list-disc">
+          <li>フロントエンドエンジニアの実装、コードレビュー</li>
+          <li>Angularアップデート</li>
+          <li>デザインシステム構築のサポート</li>
+          <li>Angularやフロントエンド開発の情報発信</li>
+          <li>
+            <span class="badge badge-primary">Angular v14/v15</span>
+            <span class="badge badge-neutral">NG-ZORRO</span>
+            <span class="badge badge-neutral">Jest</span>
+            <span class="badge badge-neutral">Testing Library</span>
+          </li>
+        </ul>
+      </TimeLineElement>
+
+      <TimeLineElement
+        title="Webノートアプリ開発"
+        subtitle="2021年1月 〜 2022年1月"
+      >
+        <ul class="list-inside list-disc">
+          <li>複数人同時編集が可能なWebノートアプリの開発</li>
+          <li>実装、コードレビュー、Angularアップデート等を担当</li>
+          <li>AWS CodePipelineを使ったCI/CDの構築</li>
+          <li>Swaggerを使ったAPIドキュメントの作成</li>
+          <li>
+            サーバーからの通知(WebSocket)されるデータの取り回しが難しかったプロジェクト
+          </li>
+          <li>
+            <span class="badge badge-primary">Angular v13</span>
+            <span class="badge badge-neutral">Angular Material</span>
+            <span class="badge badge-neutral">CodePipeline</span>
+          </li>
+        </ul>
+      </TimeLineElement>
+
+      <TimeLineElement
+        title="錠剤検査システムプロトタイプ開発"
+        subtitle="2021年2月 〜 2021年3月"
+      >
+        <ul class="list-inside list-disc">
+          <li>
+            検査装置の保存した画像ファイルの検索、検査装置のパラメータを変更するためのWebアプリ
+          </li>
+          <li>フロントエンド、バックエンドをTypeScriptで構築</li>
+          <li>
+            <span class="badge badge-primary">Angular</span>
+            <span class="badge badge-neutral">Tailwind CSS</span>
+            <span class="badge badge-neutral">Nest.js</span>
+            <span class="badge badge-neutral">MongoDB</span>
+          </li>
+        </ul>
+      </TimeLineElement>
+
+      <TimeLineElement
+        title="iOSノートアプリ開発"
+        subtitle="2020年4月 〜 2021年1月"
+      >
+        <ul class="list-inside list-disc">
+          <li>プロトタイプをVIPERアーキテクチャベースにリファクタリング</li>
+          <li>
+            Swiftは未経験だっため、書籍を読んだり、勉強会に参加したりして、基本を習得しながら作業を進めた
+          </li>
+          <li>
+            <span class="badge badge-neutral">Swift</span>
+          </li>
+        </ul>
+      </TimeLineElement>
+
+      <TimeLineElement
+        title="カラオケ予約LINEアプリ開発"
+        subtitle="2020年1月 〜 2020年3月"
+      >
+        <ul class="list-inside list-disc">
+          <li>カラオケ店舗の空室検索、予約をおこなうLINEアプリ</li>
+          <li>
+            エンジニアは自分のみの環境だったため、フロントエンド、バックエンド、インフラの全てを担当
+          </li>
+          <li>
+            <span class="badge badge-neutral">Vue.js</span>
+            <span class="badge badge-neutral">Firebase Hosting</span>
+            <span class="badge badge-neutral">Firestore</span>
+            <span class="badge badge-neutral">Cluod Functions</span>
+          </li>
+        </ul>
+      </TimeLineElement>
+
+      <TimeLineElement
+        title="木材検査システム"
+        subtitle="2019年7月 〜 2020年2月"
+      >
+        <ul class="list-inside list-disc">
+          <li>
+            既存システムが保存した木材画像の検索や、検査シミュレーションするためのWebアプリ
+          </li>
+          <li>
+            フロントエンド(Angular)の画面開発、バックエンド(Express)のAPI開発を担当
+          </li>
+          <li>
+            <span class="badge badge-primary">Angular</span>
+            <span class="badge badge-neutral">Express</span>
+            <span class="badge badge-neutral">MongoDB</span>
+          </li>
+        </ul>
+      </TimeLineElement>
+
+      <TimeLineElement
+        title="通信販売基幹システム"
+        subtitle="2019年1月 〜 2019年6月"
+      >
+        <ul class="list-inside list-disc">
+          <li>
+            楽天、Yahoo!ショッピングなどのショッピングサイトの注文情報、在庫情報を管理するWebアプリ
+          </li>
+          <li>
+            フロントエンド(Angular)の画面開発、バックエンド(Nest.js)のAPI開発を担当
+          </li>
+          <li>
+            <span class="badge badge-primary">Angular</span>
+            <span class="badge badge-neutral">Bulma</span>
+            <span class="badge badge-neutral">Nest.js</span>
+            <span class="badge badge-neutral">MongoDB</span>
+          </li>
+        </ul>
+      </TimeLineElement>
     </div>
   </div>
 
-  <div class="mb-5">
-    <div class="w-full text-2xl font-bold">資格</div>
+  <div class="divider"></div>
+
+  <div class="mt-12">
+    <div>
+      <h2 class="w-full text-2xl font-bold">Bio</h2>
+    </div>
+
+    <div class="time-line-container mt-8 grid gap-2">
+      <BioElement title="Born in 奈良" subtitle="1986" />
+      <BioElement title="神戸大学工学部情報知能工学科" subtitle="2005〜2008" />
+      <BioElement
+        title="神戸大学大学院システム情報学研究科"
+        subtitle="2009〜2010"
+      />
+      <BioElement title="日立製作所" subtitle="2011〜2016" />
+      <BioElement title="フリーランス" subtitle="2016〜" />
+    </div>
   </div>
 
-  <ul class="mx-6 mb-10 grid list-disc gap-2">
-    <li>ネットワークスペシャリスト (2015年10月)</li>
-    <li>データベーススペシャリスト (2014年4月)</li>
-    <li>セキュリティスペシャリスト (2012年10月)</li>
-    <li>応用情報技術者 (2011年4月)</li>
-  </ul>
+  <div class="divider"></div>
+
+  <div class="mt-12">
+    <div>
+      <h2 class="w-full text-2xl font-bold">OSSコミット</h2>
+    </div>
+
+    <div class="mt-8">
+      Angular公式ドキュメントの日本語翻訳等。
+      <div class="mt-1">
+        <a
+          href="https://github.com/pulls?q=is%3Apr+archived%3Afalse+is%3Apublic+is%3Amerged+-user%3Anishitaku+author%3Anishitaku+"
+          target="_blank"
+          class="link link-primary">merged PR一覧</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="mt-12">
+    <div>
+      <h2 class="w-full text-2xl font-bold">資格</h2>
+    </div>
+
+    <ul class="mx-6 mt-8 grid list-disc gap-2">
+      <li>ネットワークスペシャリスト (2015年10月)</li>
+      <li>データベーススペシャリスト (2014年4月)</li>
+      <li>セキュリティスペシャリスト (2012年10月)</li>
+      <li>応用情報技術者 (2011年4月)</li>
+    </ul>
+  </div>
 </BaseLayout>

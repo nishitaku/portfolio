@@ -3,7 +3,7 @@ const { title, url, tags, target = '_blank', pubDate } = Astro.props;
 ---
 
 <a href={url} target={target}>
-  <article class="group card w-96 bg-neutral-50 px-4 py-3">
+  <article class="group card bg-neutral-50 px-4 py-3">
     <header>
       <time datetime={pubDate.toISOString()} class="text-xs text-gray-500"
         >{pubDate.toLocaleDateString()}</time

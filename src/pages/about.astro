@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout sideBarActiveItemID="about">
+  <div>
+    <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">About</h1>
+  </div>
+
+  <div class="mt-12 flex flex-col gap-8">
+    <div class="card-xl card w-full bg-base-100 shadow-md">
+      <div class="card-body">
+        <h2 class="card-title">What I Do</h2>
+        <p class="text-sm leading-8 text-base-content/70">
+          Angularを使った開発が好きで、得意とするフロントエンドエンジニアです。UI/UXやアクセシビリティを重視し、ユーザーにとって使いやすいアプリケーションの構築を心がけています。また、レスポンシブ対応や国際化対応、ライブラリのバージョンアップなど、幅広い経験があります。
+        </p>
+      </div>
+    </div>
+
+    <div class="card-xl card w-full bg-base-100 shadow-md">
+      <div class="card-body">
+        <h2 class="card-title">Mind Set</h2>
+        <p class="leading-8 text-base-content/70">
+          MBTI診断は<a
+            class="link"
+            href="https://www.16personalities.com/ja/intj%E5%9E%8B%E3%81%AE%E6%80%A7%E6%A0%BC"
+            >INTJ-A(建築家)]</a
+          >です。
+          <br />
+          ゼロベース思考で、既存の枠組みにとらわれず、要件の本質を理解し、最適な解決策を模索するのが得意です。
+        </p>
+      </div>
+    </div>
+
+    <div class="card-xl card w-full bg-base-100 shadow-md">
+      <div class="card-body">
+        <h2 class="card-title">Work Style</h2>
+        <p class="leading-8 text-base-content/70">
+          原則フルリモートとなります。
+          <br />
+          稼働時間はAM9:00〜PM6:00になります。
+        </p>
+      </div>
+    </div>
+
+    <div class="card-xl card w-full bg-base-100 shadow-md">
+      <div class="card-body">
+        <h2 class="card-title">Contact</h2>
+        <p class="leading-8 text-base-content/70">
+          <a
+            href="https://twitter.com/nishitaku_dev"
+            target="_blank"
+            class="link link-primary">@nithitaku_dev</a
+          >へDMをお願いします。
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
