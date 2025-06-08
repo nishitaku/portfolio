@@ -1,5 +1,6 @@
 ---
 import BioElement from '../components/Bio.astro';
+import DevIcon from '../components/DevIcon.astro';
 import TimeLineElement from '../components/TimeLine.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
@@ -19,28 +20,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         title="クリニック向け業務管理サービス開発"
         subtitle="2024年4月 〜 "
       >
-        <ul class="list-inside list-disc">
+        <div slot="dev-icons">
+          <DevIcon name="devicon:angular" tooltip="Angular v13-v17" />
+          <DevIcon name="devicon:angularmaterial" tooltip="Angular Material" />
+          <DevIcon name="devicon:storybook" tooltip="Storybook" />
+          <DevIcon name="devicon:chartjs" tooltip="Chart.js" />
+          <DevIcon name="ngxs" tooltip="NGXS" />
+        </div>
+        <ul class="list-inside list-disc text-sm sm:text-base">
           <li>フロントエンドの実装</li>
-          <li>
-            <span class="badge badge-primary">Angular v13</span>
-            <span class="badge badge-neutral">NGXS</span>
-          </li>
+          <li>Angularアップデート</li>
+          <li>Angular MaterialのMDC-based Component Migration</li>
+          <li>デザインシステム構築</li>
         </ul>
       </TimeLineElement>
 
       <TimeLineElement title="契約書管理サービス開発" subtitle="2023年8月 〜 ">
-        <ul class="list-inside list-disc">
+        <div slot="dev-icons">
+          <DevIcon name="devicon:angular" tooltip="Angular v15-latest" />
+          <DevIcon name="logos:nx" tooltip="Nx" />
+          <DevIcon name="devicon:storybook" tooltip="Storybook" />
+          <DevIcon name="devicon:githubactions" tooltip="GitHub Actions" />
+          <DevIcon name="devicon:tailwindcss" tooltip="Tailwind CSS" />
+          <DevIcon name="logos:jest" tooltip="Jest" />
+          <DevIcon name="logos:testing-library" tooltip="Testing Library" />
+        </div>
+        <ul class="list-inside list-disc text-sm sm:text-base">
           <li>フロントエンドの実装、コードレビュー</li>
           <li>Github Actionsを使ったCI/CDフローの構築</li>
-          <li>
-            <span class="badge badge-primary">Angular v15/v16/v17</span>
-            <span class="badge badge-neutral">Nx</span>
-            <span class="badge badge-neutral">Ngrx</span>
-            <span class="badge badge-neutral">Github Actions</span>
-            <span class="badge badge-neutral">Tailwind CSS</span>
-            <span class="badge badge-neutral">Jest</span>
-            <span class="badge badge-neutral">Testing Library</span>
-          </li>
+          <li>デザインシステムのアップデート</li>
         </ul>
       </TimeLineElement>
 
@@ -48,17 +56,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         title="電子チケットサービス開発"
         subtitle="2022年1月 〜 2023年7月"
       >
-        <ul class="list-inside list-disc">
-          <li>フロントエンドエンジニアの実装、コードレビュー</li>
+        <div slot="dev-icons">
+          <DevIcon name="devicon:angular" tooltip="Angular v14-v15" />
+          <DevIcon name="devicon:antdesign" tooltip="NG-ZORRO" />
+          <DevIcon name="logos:jest" tooltip="Jest" />
+          <DevIcon name="logos:testing-library" tooltip="Testing Library" />
+        </div>
+        <ul class="list-inside list-disc text-sm sm:text-base">
+          <li>フロントエンドの実装、コードレビュー</li>
           <li>Angularアップデート</li>
-          <li>デザインシステム構築のサポート</li>
-          <li>Angularやフロントエンド開発の情報発信</li>
-          <li>
-            <span class="badge badge-primary">Angular v14/v15</span>
-            <span class="badge badge-neutral">NG-ZORRO</span>
-            <span class="badge badge-neutral">Jest</span>
-            <span class="badge badge-neutral">Testing Library</span>
-          </li>
+          <li>デザインシステム構築</li>
+          <li>Angularおよびフロントエンド開発の情報発信</li>
         </ul>
       </TimeLineElement>
 
@@ -66,36 +74,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         title="Webノートアプリ開発"
         subtitle="2021年1月 〜 2022年1月"
       >
-        <ul class="list-inside list-disc">
+        <div slot="dev-icons">
+          <DevIcon name="devicon:angular" tooltip="Angular v13" />
+          <DevIcon name="devicon:angularmaterial" tooltip="Angular Material" />
+          <DevIcon name="devicon:socketio" tooltip="socket.io" />
+          <DevIcon name="logos:aws-codepipeline" tooltip="CodePipeline" />
+        </div>
+        <ul class="list-inside list-disc text-sm sm:text-base">
           <li>複数人同時編集が可能なWebノートアプリの開発</li>
-          <li>実装、コードレビュー、Angularアップデート等を担当</li>
+          <li>フロントエンドの実装、コードレビュー</li>
+          <li>Angularアップデート</li>
           <li>AWS CodePipelineを使ったCI/CDの構築</li>
           <li>Swaggerを使ったAPIドキュメントの作成</li>
-          <li>
-            サーバーからの通知(WebSocket)されるデータの取り回しが難しかったプロジェクト
-          </li>
-          <li>
-            <span class="badge badge-primary">Angular v13</span>
-            <span class="badge badge-neutral">Angular Material</span>
-            <span class="badge badge-neutral">CodePipeline</span>
-          </li>
         </ul>
       </TimeLineElement>
 
       <TimeLineElement
-        title="錠剤検査システムプロトタイプ開発"
+        title="錠剤検査システム開発"
         subtitle="2021年2月 〜 2021年3月"
       >
-        <ul class="list-inside list-disc">
+        <div slot="dev-icons">
+          <DevIcon name="devicon:angular" tooltip="Angular" />
+          <DevIcon name="devicon:tailwindcss" tooltip="Tailwind CSS" />
+          <DevIcon name="devicon:nestjs" tooltip="NestJS" />
+          <DevIcon name="devicon:mongodb" tooltip="MongoDB" />
+        </div>
+        <ul class="list-inside list-disc text-sm sm:text-base">
           <li>
-            検査装置の保存した画像ファイルの検索、検査装置のパラメータを変更するためのWebアプリ
-          </li>
-          <li>フロントエンド、バックエンドをTypeScriptで構築</li>
-          <li>
-            <span class="badge badge-primary">Angular</span>
-            <span class="badge badge-neutral">Tailwind CSS</span>
-            <span class="badge badge-neutral">Nest.js</span>
-            <span class="badge badge-neutral">MongoDB</span>
+            画像ファイルの検索、検査装置のパラメータを変更するためのWebアプリのプロトタイプを短納期で開発
           </li>
         </ul>
       </TimeLineElement>
@@ -104,14 +110,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         title="iOSノートアプリ開発"
         subtitle="2020年4月 〜 2021年1月"
       >
-        <ul class="list-inside list-disc">
-          <li>プロトタイプをVIPERアーキテクチャベースにリファクタリング</li>
-          <li>
-            Swiftは未経験だっため、書籍を読んだり、勉強会に参加したりして、基本を習得しながら作業を進めた
-          </li>
-          <li>
-            <span class="badge badge-neutral">Swift</span>
-          </li>
+        <div slot="dev-icons">
+          <DevIcon name="logos:swift" tooltip="Swift" />
+        </div>
+        <ul class="list-inside list-disc text-sm sm:text-base">
+          <li>VIPERアーキテクチャにリファクタリング</li>
+          <li>Swift初現場。書籍や勉強会で、基本を習得しながら作業を進めた</li>
         </ul>
       </TimeLineElement>
 
@@ -119,16 +123,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         title="カラオケ予約LINEアプリ開発"
         subtitle="2020年1月 〜 2020年3月"
       >
-        <ul class="list-inside list-disc">
-          <li>カラオケ店舗の空室検索、予約をおこなうLINEアプリ</li>
+        <div slot="dev-icons">
+          <DevIcon name="devicon:vuejs" tooltip="Vue.js" />
+          <DevIcon name="devicon:firebase" tooltip="Firebase" />
+          <DevIcon
+            name="logos:google-cloud-functions"
+            tooltip="Cloud Functions"
+          />
+        </div>
+        <ul class="list-inside list-disc text-sm sm:text-base">
+          <li>カラオケ店舗の空室検索、予約LINEアプリ</li>
           <li>
-            エンジニアは自分のみの環境だったため、フロントエンド、バックエンド、インフラの全てを担当
-          </li>
-          <li>
-            <span class="badge badge-neutral">Vue.js</span>
-            <span class="badge badge-neutral">Firebase Hosting</span>
-            <span class="badge badge-neutral">Firestore</span>
-            <span class="badge badge-neutral">Cluod Functions</span>
+            小規模な開発だったため、Fireabseを利用したシンプルな構成に（Firebase
+            Hosting / Firestore / Cloud Functions）
           </li>
         </ul>
       </TimeLineElement>
@@ -137,18 +144,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         title="木材検査システム"
         subtitle="2019年7月 〜 2020年2月"
       >
-        <ul class="list-inside list-disc">
-          <li>
-            既存システムが保存した木材画像の検索や、検査シミュレーションするためのWebアプリ
-          </li>
-          <li>
-            フロントエンド(Angular)の画面開発、バックエンド(Express)のAPI開発を担当
-          </li>
-          <li>
-            <span class="badge badge-primary">Angular</span>
-            <span class="badge badge-neutral">Express</span>
-            <span class="badge badge-neutral">MongoDB</span>
-          </li>
+        <div slot="dev-icons">
+          <DevIcon name="devicon:angular" tooltip="Angular" />
+          <DevIcon name="devicon:express-wordmark" tooltip="Express" />
+          <DevIcon name="devicon:mongodb" tooltip="MongoDB" />
+        </div>
+        <ul class="list-inside list-disc text-sm sm:text-base">
+          <li>画像の検索や、検査シミュレーションするためのWebアプリ</li>
+          <li>フロントエンドの実装、バックエンドのAPI開発を担当</li>
         </ul>
       </TimeLineElement>
 
@@ -156,19 +159,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         title="通信販売基幹システム"
         subtitle="2019年1月 〜 2019年6月"
       >
-        <ul class="list-inside list-disc">
+        <div slot="dev-icons">
+          <DevIcon name="devicon:angular" tooltip="Angular" />
+          <DevIcon name="logos:bulma" tooltip="Bulma" />
+          <DevIcon name="devicon:nestjs" tooltip="NestJS" />
+          <DevIcon name="devicon:mongodb" tooltip="MongoDB" />
+        </div>
+        <ul class="list-inside list-disc text-sm sm:text-base">
           <li>
             楽天、Yahoo!ショッピングなどのショッピングサイトの注文情報、在庫情報を管理するWebアプリ
           </li>
-          <li>
-            フロントエンド(Angular)の画面開発、バックエンド(Nest.js)のAPI開発を担当
-          </li>
-          <li>
-            <span class="badge badge-primary">Angular</span>
-            <span class="badge badge-neutral">Bulma</span>
-            <span class="badge badge-neutral">Nest.js</span>
-            <span class="badge badge-neutral">MongoDB</span>
-          </li>
+          <li>フロントエンドの実装、バックエンドのAPI開発を担当</li>
         </ul>
       </TimeLineElement>
     </div>
