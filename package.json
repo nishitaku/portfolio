@@ -27,6 +27,7 @@
   "devDependencies": {
     "@astrojs/partytown": "^2.1.0",
     "@iconify-json/devicon": "^1.2.27",
+    "@iconify-json/logos": "^1.2.4",
     "@tailwindcss/typography": "^0.5.9",
     "node-html-to-image": "4.0.0",
     "prettier": "^3.4.2",

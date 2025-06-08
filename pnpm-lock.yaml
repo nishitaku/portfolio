@@ -43,6 +43,9 @@ devDependencies:
   '@iconify-json/devicon':
     specifier: ^1.2.27
     version: 1.2.27
+  '@iconify-json/logos':
+    specifier: ^1.2.4
+    version: 1.2.4
   '@tailwindcss/typography':
     specifier: ^0.5.9
     version: 0.5.15(tailwindcss@3.3.5)
@@ -624,6 +627,12 @@ packages:
 
   /@iconify-json/devicon@1.2.27:
     resolution: {integrity: sha512-zA9nGM5DlsckO0lyl17+IQ23VOVgu/zSojK9Pjeb/v2ML8zrBBEbcfHjuH9jPOQz1eKEOEfIIyYJiSytgj+yAw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/logos@1.2.4:
+    resolution: {integrity: sha512-XC4If5D/hbaZvUkTV8iaZuGlQCyG6CNOlaAaJaGa13V5QMYwYjgtKk3vPP8wz3wtTVNVEVk3LRx1fOJz+YnSMw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
