@@ -3,6 +3,8 @@ title: |
   アクセシビリティカンファレンス名古屋に参加してきた #nagoya_a11yconf
 pubDate: 2024-09-24T00:38:46.721Z
 heroImage: accessibility-conference-in-nagoya.png
+tags:
+  - イベント
 ---
 
 9/7(土)に開催された「アクセシビリティカンファレンス名古屋」にオフライン参加したので、雑にまとめる。

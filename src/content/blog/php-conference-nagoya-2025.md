@@ -3,6 +3,8 @@ title: |
   PHPカンファレンス名古屋2025に参加してきた #phpcon_nagoya
 pubDate: 2025-02-25T01:33:59.339Z
 heroImage: php-conference-nagoya-2025.png
+tags:
+  - イベント
 ---
 
 2/22(土)に開催された「PHPカンファレンス名古屋」にオフライン参加してきた。
