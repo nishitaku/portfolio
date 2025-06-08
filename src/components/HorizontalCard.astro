@@ -6,7 +6,7 @@ const { title, url, tags, target = '_blank', pubDate } = Astro.props;
   <article class="group card bg-neutral-50 px-4 py-3">
     <header>
       <time datetime={pubDate.toISOString()} class="text-xs text-gray-500"
-        >{pubDate.toLocaleDateString()}</time
+        >{pubDate.toLocaleDateString('ja-JP')}</time
       >
     </header>
     <h2 class="group-hover:link">{title}</h2>
