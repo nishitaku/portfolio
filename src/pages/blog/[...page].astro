@@ -1,5 +1,5 @@
 ---
-import { type GetStaticPaths, type InferGetStaticPropsType } from 'astro';
+import { type GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import HorizontalCard from '../../components/HorizontalCard.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -9,8 +9,6 @@ export const getStaticPaths = (async ({ paginate }) => {
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   return paginate(posts, { pageSize: 10 });
 }) satisfies GetStaticPaths;
-
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { page } = Astro.props;
 ---

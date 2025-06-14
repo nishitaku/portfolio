@@ -1,6 +1,5 @@
 ---
-import { type CollectionEntry, getCollection, render } from 'astro:content';
-import { type BlogSchema } from '../../content.config';
+import { getCollection, render } from 'astro:content';
 import PostLayout from '../../layouts/PostLayout.astro';
 
 export async function getStaticPaths() {
@@ -11,12 +10,8 @@ export async function getStaticPaths() {
   }));
 }
 
-interface Props {
-  entry: CollectionEntry<'blog'>;
-}
-
 const { entry } = Astro.props;
-const post: BlogSchema = entry.data;
+const post = entry.data;
 const { Content } = await render(entry);
 ---
 
