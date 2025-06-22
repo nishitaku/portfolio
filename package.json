@@ -19,7 +19,7 @@
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.9.2",
     "astro-icon": "^1.1.5",
-    "daisyui": "^4.12.10",
+    "daisyui": "^5.0.43",
     "dayjs": "^1.11.11",
     "sharp": "^0.33.3",
     "tailwindcss": "^4.1.10"
