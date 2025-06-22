@@ -4,21 +4,21 @@ const { title, subtitle } = Astro.props;
 
 <div class:list={['flex', 'mb-4', Astro.props.class]}>
   <div class="time">
-    <span class="mt-1 block h-4 w-4 rounded-full bg-primary"></span>
-    <span class="line block h-full w-[2px] translate-x-[7px] bg-primary"></span>
+    <span class="bg-primary mt-1 block h-4 w-4 rounded-full"></span>
+    <span class="line bg-primary block h-full w-[2px] translate-x-[7px]"></span>
   </div>
   <div
-    class="bd-grid bg-base collapse collapse-arrow ml-5 border pl-5 shadow-sm"
+    class="bd-grid bg-base collapse-arrow border-base-300 collapse ml-5 border pl-5 shadow-sm"
   >
     <input type="checkbox" />
     <div class="collapse-title mt-2 p-0 text-lg">
       <span class="text-xs font-light">{subtitle}</span>
       <h3 class="text-sm font-semibold sm:text-base md:text-lg">{title}</h3>
+      <slot name="dev-icons" />
     </div>
     <div class="collapse-content text-justify">
       <slot />
     </div>
-    <slot name="dev-icons" />
   </div>
 </div>
 
