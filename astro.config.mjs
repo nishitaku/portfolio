@@ -1,7 +1,7 @@
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import icon from 'astro-icon';
 import { defineConfig } from 'astro/config';
 
@@ -9,10 +9,10 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://nishitaku.github.io',
   base: 'portfolio/',
+
   integrations: [
     mdx(),
     sitemap(),
-    tailwind(),
     partytown({
       // Adds dataLayer.push as a forwarding-event.
       config: {
@@ -21,4 +21,8 @@ export default defineConfig({
     }),
     icon(),
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
