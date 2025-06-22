@@ -5,10 +5,13 @@ import tailwind from '@astrojs/tailwind';
 import icon from 'astro-icon';
 import { defineConfig } from 'astro/config';
 
+import tailwindcss from '@tailwindcss/vite';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://nishitaku.github.io',
   base: 'portfolio/',
+
   integrations: [
     mdx(),
     sitemap(),
@@ -21,4 +24,8 @@ export default defineConfig({
     }),
     icon(),
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

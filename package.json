@@ -17,12 +17,13 @@
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.4.1",
     "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.9.2",
     "astro-icon": "^1.1.5",
     "daisyui": "^4.12.10",
     "dayjs": "^1.11.11",
     "sharp": "^0.33.3",
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^4.1.10"
   },
   "devDependencies": {
     "@astrojs/partytown": "^2.1.4",
