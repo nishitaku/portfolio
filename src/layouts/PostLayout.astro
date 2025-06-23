@@ -19,15 +19,15 @@ dayjs.extend(localizedFormat);
             datetime={updatedDate.toISOString()}
             class="text-xs text-gray-500"
           >
-            {updatedDate.toLocaleDateString()}に更新
+            {updatedDate.toLocaleDateString('ja-JP')}に更新
           </time>
         ) : (
           <time datetime={pubDate.toISOString()} class="text-xs text-gray-500">
-            {pubDate.toLocaleDateString()}に公開
+            {pubDate.toLocaleDateString('ja-JP')}に公開
           </time>
         )
       }
-      <h2 class="mb-0 mt-0 text-3xl font-bold">{title}</h2>
+      <h2 class="mt-0 mb-0 text-3xl font-bold">{title}</h2>
       <div class="mt-2 flex flex-wrap gap-2">
         {
           tags &&
