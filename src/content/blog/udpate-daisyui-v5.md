@@ -3,6 +3,7 @@ title: daisyUI v5 (TailwindCSS v4) にアップデートしたときのメモ
 pubDate: 2025-06-26T23:38:54.116Z
 tags:
   - astro
+heroImage: update-daisyui-v5.png
 ---
 
 本サイトで利用しているUIコンポーネントライブラリ[daisyUI](https://daisyui.com/)をv5に、[TailwindCSS]()をv4にそれぞれアップデートした。その際の対応内容を備忘録として残しておく。
