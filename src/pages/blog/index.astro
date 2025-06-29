@@ -5,8 +5,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const blogPosts = await getCollection('blog');
 const zennPosts = await getCollection('zenn');
+const qiitaPosts = await getCollection('qiita');
 
-const allPosts = [...blogPosts, ...zennPosts];
+const allPosts = [...blogPosts, ...zennPosts, ...qiitaPosts];
 allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
