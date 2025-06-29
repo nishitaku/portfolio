@@ -33,7 +33,26 @@ const zennCollection = defineCollection({
   schema: blogSchema,
 });
 
+const qiitaCollection = defineCollection({
+  loader: async () => {
+    const res = await fetch(
+      'https://qiita.com/api/v2/items?page=1&per_page=100&query=user:nishitaku',
+    );
+    const data = await res.json();
+    return data.map((article: any) => ({
+      id: article.id,
+      title: article.title,
+      pubDate: article.created_at,
+      updatedDate: article.updated_at,
+      link: article.url,
+      tags: ['qiita'],
+    }));
+  },
+  schema: blogSchema,
+});
+
 export const collections = {
   blog: blogCollection,
   zenn: zennCollection,
+  qiita: qiitaCollection,
 };
