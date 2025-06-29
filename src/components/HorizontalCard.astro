@@ -13,9 +13,16 @@ const { title, url, tags, target = '_blank', pubDate } = Astro.props;
     <footer class="card-actions mt-px">
       {
         tags &&
-          tags.map((tag) => (
-            <div class="badge badge-ghost badge-sm">#{tag}</div>
-          ))
+          tags.map((tag: string) => {
+            if (tag === 'zenn') {
+              return (
+                <div class="badge badge-sm border-none bg-[#3EA8FF] text-white">
+                  #{tag}
+                </div>
+              );
+            }
+            return <div class="badge badge-ghost badge-sm">#{tag}</div>;
+          })
       }
     </footer>
   </article>
