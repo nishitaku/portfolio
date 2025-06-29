@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import HorizontalCard from '../../components/HorizontalCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const blogPosts = await getCollection('blog');
+const zennPosts = await getCollection('zenn');
+
+const allPosts = [...blogPosts, ...zennPosts];
+allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout title="Blog" sideBarActiveItemID="blog">
+  <div>
+    <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">Blog</h1>
+  </div>
+
+  <section class="mt-12">
+    <div class="grid gap-4">
+      {
+        allPosts.map((post) => (
+          <HorizontalCard
+            title={post.data.title}
+            url={post.data.link || './blog/' + post.id}
+            target={post.data.link ? '_blank' : '_self'}
+            tags={post.data.tags}
+            pubDate={post.data.pubDate}
+          />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
