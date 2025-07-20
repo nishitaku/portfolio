@@ -8,7 +8,7 @@ const { title, subtitle } = Astro.props;
     <span class="line bg-primary block h-full w-[2px] translate-x-[7px]"></span>
   </div>
   <details
-    class="bd-grid bg-base collapse-arrow border-base-300 collapse ml-5 border pl-5 shadow-sm"
+    class="bd-grid bg-base collapse-arrow border-base-300 collapse ml-5 overflow-visible border pl-5 shadow-sm"
   >
     <summary class="collapse-title mt-2 p-0 text-lg">
       <span class="text-xs font-light">{subtitle}</span>
@@ -24,5 +24,25 @@ const { title, subtitle } = Astro.props;
 <style>
   div:last-child .time > .line {
     display: none;
+  }
+
+  /* details要素のアニメーション */
+  /* https://www.tak-dcxi.com/article/css-only-details-animation-2025 */
+  :root {
+    interpolate-size: allow-keywords; /* サイズキーワードによるアニメーションを許可 */
+  }
+  details {
+    &::details-content {
+      @media (prefers-reduced-motion: no-preference) {
+        overflow: clip;
+        transition-duration: 300ms;
+        transition-property: content-visibility, block-size;
+        transition-behavior: allow-discrete;
+      }
+    }
+
+    &:not(:open)::details-content {
+      block-size: 0;
+    }
   }
 </style>
