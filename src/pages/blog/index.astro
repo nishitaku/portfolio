@@ -11,7 +11,7 @@ const allPosts = [...blogPosts, ...zennPosts, ...qiitaPosts];
 allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<BaseLayout title="Blog" sideBarActiveItemID="blog">
+<BaseLayout title="Blog">
   <div>
     <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">Blog</h1>
   </div>
