@@ -60,7 +60,7 @@
     {
       "title": "OGP画像生成",
       "script": "./scripts/social-img.js",
-      "nodeBin": "/Users/nishitaku/.volta/bin/node"
+      "nodeBin": "/Users/nishitaku/.local/share/mise/installs/node/22/bin/node"
     }
   ]
 }
