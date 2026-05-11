@@ -1,7 +1,8 @@
 ---
 title: |
   フロントエンドカンファレンス名古屋2026に参加してきた #fec_nagoya
-pubDate: 2026-05-09T15:41:58.563Z
+pubDate: 2026-05-11T23:31:04.061Z
+heroImage: frontend-conference-nagoya-2026.png
 tags:
   - イベント
 ---
