@@ -95,6 +95,10 @@ AIの出力がストリーミングUIになる流れは理解していたが、`
 
 理想論だけではなく、「現実の制約の中でどう前に進めるか」という実践的な話として、とても考えさせられる内容だった。
 
+[追記] スピーカーの方から補足があった。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">感想ありがとうございます！<br>&gt; あえて残業を減らし、業務時間外に取り組んだ<br><br>ここ、サビ残感伝わってるので補足しておくと、<br><br>無駄なミクロな改善で残業するぐらいなら休んで、好きな事しようという感じが近いと思います<br><br>気が向いたら、<br>普段技術系の記事読む時に関連技術の記事を読む程度です</p>&mdash; kii (@kiichi_sugihara) <a href="https://twitter.com/kiichi_sugihara/status/2054158610180239440?ref_src=twsrc%5Etfw">May 12, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 ## スポンサーブース
 
